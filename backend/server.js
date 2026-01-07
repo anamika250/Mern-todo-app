@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import todoRoutes from "./routes/todo.route.js";
 import { connectDB } from "./config/db.js";
+import authRoutes from "./routes/auth.route.js";
 import cors from "cors";
 import path from "path";
 
@@ -14,6 +15,7 @@ app.use(express.json());
 //app.use(cors());
 
 app.use("/api/todos", todoRoutes);
+app.use("/api/auth", authRoutes);
 
 const __dirname = path.resolve();
 
