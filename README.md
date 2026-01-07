@@ -30,5 +30,3 @@ Users can register, log in, and manage their personal tasks securely using **JWT
 - MongoDB & Mongoose
 - JSON Web Token (JWT)
 - bcryptjs
-## 📂 Project Structure
-
